@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-CORE HW 19</title>
+    <link rel="stylesheet" href="./main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body class="background-body">
+    <div class="block-sign-up">
+        <form name="f1">
+            <h1 class="title">Please sing up</h1>
+            <div class="form-floating mb-3 first-name">
+                <input name="firstName" type="text" class="form-control" id="floatingInput" placeholder="First name">
+                <label for="floatingInput">First name</label>
+                <img class="image-checkmark-1" src="./images/icons8-checkmark-48.png" alt="">
+                <img class="image-delete-1" src="./images/icons8-delete-48.png" alt="">
+            </div>
+            <div class="form-floating mb-3 last-name">
+                <input name="lastName" type="text" class="form-control" id="floatingInput" placeholder="Last name">
+                <label for="floatingInput">Last name</label>
+                <img class="image-checkmark-2" src="./images/icons8-checkmark-48.png" alt="">
+                <img class="image-delete-2" src="./images/icons8-delete-48.png" alt="">
+            </div>
+            <div class="form-floating mb-3 email-address">
+                <input name="emailAddress" type="email" class="form-control" id="floatingInput"
+                    placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+                <img class="image-checkmark-3" src="./images/icons8-checkmark-48.png" alt="">
+                <img class="image-delete-3" src="./images/icons8-delete-48.png" alt="">
+                <div class="sign-up-message">
+                    <p>This email already exist</p>
+                </div>
+            </div>
+            <div class="form-floating mb-3 password">
+                <input name="password" type="password" class="form-control" id="floatingPassword"
+                    placeholder="Password">
+                <label for="floatingPassword">Password</label>
+                <img class="image-checkmark-4" src="./images/icons8-checkmark-48.png" alt="">
+                <img class="image-delete-4" src="./images/icons8-delete-48.png" alt="">
+            </div>
+            <button name="buttonSignUp" class="btn btn-primary" type="button">Sing Up</button>
+            <button name="toSignIn" class="btn-to-sign" type="button">Sign In now</button>
+        </form>
+    </div>
+    <div class="block-sign-in">
+        <form name="f2">
+            <h1 class="title">Please sing in</h1>
+            <div class="form-floating mb-3 email-address">
+                <input name="emailAddressSignIn" type="email" class="form-control" id="floatingInput"
+                    placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating mb-3 password">
+                <input name="passwordSignIn" type="password" class="form-control" id="floatingPassword"
+                    placeholder="Password">
+                <label for="floatingPassword">Password</label>
+                <div class="sign-in-message1">
+                    <p>localStorage is empty</p>
+                </div>
+                <div class="sign-in-message2">
+                    <p>Incorrect email or password</p>
+                </div>
+            </div>
+            <button name="buttonSignIn" class="btn btn-success" type="button">Sing In</button>
+            <button name="toSignUp" class="btn-to-sign" type="button">Sign up now</button>
+        </form>
+    </div>
+    <div class="block-profile">
+        <form name="f3">
+            <div class="wrapper">
+                <div class="photo"></div>
+                <h2 class="name-and-surname">Ivan Ivanov</h2>
+                <div class="his-email">ii@gmail.com</div>
+                <div class="job">Designer & Web Developing</div>
+                <div class="line"></div>
+                <button name="buttonSignOut" class="btn btn-success" type="button">Sing Out</button>
+            </div>
+        </form>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
